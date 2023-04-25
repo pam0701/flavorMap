@@ -1,0 +1,10 @@
+spring:
+  data:
+    rest:
+      base-path: /api
+  hateoas:
+    use-hal-as-default-json-media-type: true
+  resources:
+    static-locations: classpath:/META-INF/resources/, classpath:/resources/, classpath:/static/, classpath:/public/
+  mvc:
+    static-path-pattern: /resources/**
